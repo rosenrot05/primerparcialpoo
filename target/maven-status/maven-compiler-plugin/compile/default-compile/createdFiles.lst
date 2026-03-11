@@ -1,0 +1,5 @@
+main\Aplicacion.class
+modelo\Curso.class
+controlador\ControladorCurso.class
+modelo\Estudiante.class
+vista\VistaCurso.class
