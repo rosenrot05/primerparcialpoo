@@ -73,6 +73,16 @@ public class Curso {
     return null;
 }
     
+    public Estudiante buscar(String nombre) {
+    for (int i = 0; i < cantidad; i++) {
+        if (estudiantes[i] != null &&
+            estudiantes[i].getNombre().equalsIgnoreCase(nombre)) {
+            return estudiantes[i];
+        }
+    }
+    return null;
+}
+    
     public void modificarEstudiante(int codigo, double nuevoSoftware, double nuevoHardware, double nuevaMatematica) {
         Estudiante e = buscar(codigo);
         if (e != null) {
