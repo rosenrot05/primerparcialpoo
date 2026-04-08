@@ -7,6 +7,7 @@ package controlador;
 
 import modelo.Curso;
 import modelo.Estudiante;
+import modelo.EstudianteBecado;
 
 public class ControladorCurso {
     
@@ -20,6 +21,12 @@ public class ControladorCurso {
         curso.agregar(e, posicion);
     
     }
+    
+    // SOBRECARGA
+    public void agregar(int posicion, int codigo, String nombre, double software, double hardware, double matematica, double bono) {
+    Estudiante e = new EstudianteBecado(codigo, nombre, software, hardware, matematica, bono);
+    curso.agregar(e, posicion);
+}
 // getter
     public Curso getCurso() {
         return curso;
